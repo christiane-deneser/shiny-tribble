@@ -1,0 +1,20 @@
+<nav class="nav-main">
+  <button class="nav-main__button" aria-haspopup="true" aria-controls="id-nav-main" aria-expanded="true">
+    <span class="visually-hidden">{{button.text}}</span>
+    <span class="nav-main__icon-wrapper">
+      <!--SVG-->
+    </span>
+  </button>
+  <ul id="id-nav-main" class="nav-main__list">
+    {{#each items}}
+      <li class="nav-main__item">
+        <a class="nav-main__link" href="{{href}}">{{text}}</a>
+      </li>
+    {{/each}}
+    {{#with login}}
+      <li class="nav-main__item--login">
+        <a class="nav-main__link--login" href="{{link.href}}">{{link.text}}</a>
+      </li>
+    {{/with}}
+  </ul>
+</nav>

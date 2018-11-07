@@ -1,0 +1,77 @@
+{
+  "context": {
+    "title": "Music production Live and Push - Ableton",
+    "header": {
+      "logo": {
+        "link": {
+          "href": "/",
+          "text": "Music production Live and Push - Ableton"
+        },
+        "img": {
+          "src": "/src/images/icon/ableton-logo.svg",
+          "alt": "Ableton Logo"
+        }
+      },
+      "nav-main": {
+        "button": {
+          "text": "Main navigation"
+        },
+        "items": [
+          {
+            "href": "/live",
+            "text": "Live",
+            "is-active": false
+          },
+          {
+            "href": "/push",
+            "text": "Push",
+            "is-active": false
+          },
+          {
+            "href": "/link",
+            "text": "Link",
+            "is-active": false
+          },
+          {
+            "href": "/packs",
+            "text": "Packs",
+            "is-active": false
+          },
+          {
+            "href": "/shop",
+            "text": "Shop",
+            "is-active": false
+          }
+        ],
+        "login": {
+          "link": {
+            "href": "/login",
+            "text": "Login or register"
+          }
+        }
+      },
+      "search": {
+        "form": {
+          "label": "Search Form",
+          "action": "/search",
+          "method": "GET"
+        },
+        "label": {
+          "for": "id-search",
+          "text": "Search for Cool Stuff at Ableton"
+        },
+        "input": {
+          "id": "id-search",
+          "type": "search"
+        },
+        "button": {
+          "type": "submit",
+          "text": "Start Search",
+          "icon": ""
+        }
+      }
+    },
+    "main": "main",
+    "footer": "footer"
+  }
+}
