@@ -1,0 +1,10 @@
+<div class="image">
+  <picture class="image__picture">
+    {{#each sources}}
+      <source media="{{ media }}"
+              srcset="{{ srcset }} {{ width }}w"
+              sizes="100vw">
+    {{/each}}
+    <img class="image__img" src="{{ src }}" alt="{{ alt }}">
+  </picture>
+</div>

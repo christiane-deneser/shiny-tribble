@@ -71,7 +71,44 @@
         }
       }
     },
-    "main": "main",
-    "footer": "footer"
+    "main": {
+      "image": {
+        "src": "https://unsplash.it/1024/733",
+        "alt": "Alt text",
+        "sources": [
+          {
+            "media": "(min-width: 64em)",
+            "srcset": "https://unsplash.it/1024/733",
+            "width": "1024"
+          },
+          {
+            "media": "(min-width: 48em)",
+            "srcset": "https://unsplash.it/768/650",
+            "width": "768"
+          },
+          {
+            "media": "(min-width: 20em)",
+            "srcset": "https://unsplash.it/320/150",
+            "width": "320"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "nav-footer": {
+        "items": [
+          {
+            "link": {
+              "href": "/",
+              "text": "Ableton Homepage"
+            },
+            "img": {
+              "href": "",
+              "alt": "Alt Text"
+            }
+          }
+        ]
+      }
+    }
   }
 }

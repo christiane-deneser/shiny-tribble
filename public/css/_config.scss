@@ -1,0 +1,20 @@
+:root {
+  /**
+  * COLORS
+  */
+  --black: #000;
+  --primary-color: #fed134;
+  --secondary-color: var(--black);
+
+  /**
+  * FONTS
+  */
+  --main-font: "Futura-pt-Medium", Helvetica, sans-serif;
+  --html-font-size: 100%; /* 16px */
+  --html-line-height: normal;
+  --base-font-size: 1rem; /* 16px */
+
+  @media screen and (min-width: 768px) {
+    --base-font-size: 1.125rem; /* 18px */
+  }
+}
