@@ -1,5 +1,21 @@
 .search {}
 
-.search__input {}
+.search__form {
+  border-bottom: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
 
-.search__submit {}
+.search__input {
+  width: 100%;
+}
+
+.search__submit {
+
+}
+
+.search__icon {
+  height: 30px;
+  width: 30px;
+}

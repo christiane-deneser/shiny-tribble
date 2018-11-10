@@ -1,14 +1,35 @@
-.nav-main {}
+.nav-main {
+  margin-bottom: var(--base-spacing);
+  max-height: 100%;
+}
 
-.nav-main__button {}
+.nav-main__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-.nav-main__icon-wrapper {}
+.nav-main__icon {
+  display: inline-block;
+  height: 1.875rem; //30px;
+  width: 1.875rem; //30px;
+}
 
-.nav-main__list {}
+.nav-main__list {
+  list-style: none;
+}
 
-.nav-main__item {}
+.nav-main__item {
+  margin-bottom: var(--base-spacing);
+}
 
-.nav-main__item--login {}
+.nav-main__item:last-child {
+  margin-bottom: var(--base-spacing-large);
+}
+
+.nav-main__item--login {
+  font-size: var(--small-font-size);
+}
 
 .nav-main__link {}
 

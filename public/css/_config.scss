@@ -9,10 +9,11 @@
   /**
   * FONTS
   */
-  --main-font: "Futura-pt-Medium", Helvetica, sans-serif;
+  --main-font: "Futura", Helvetica, sans-serif;
   --html-font-size: 100%; /* 16px */
   --html-line-height: normal;
   --base-font-size: 1rem; /* 16px */
+  --small-font-size: .75rem; /* 12px*/
 
   @media screen and (min-width: 768px) {
     --base-font-size: 1.125rem; /* 18px */
@@ -30,4 +31,11 @@
   @media screen and (min-width: 1024px) {
     --page-spacing: calc(1.25rem * 3); /*60px*/
   }
+
+  /**
+  * VERTICAL MARGINS
+  */
+  --base-spacing: 1.25rem; /*20px*/
+  --base-spacing-large: calc(1.25rem * 2); /*40px*/
+  --base-spacing-largest: calc(1.25rem * 3); /*60px*/
 }

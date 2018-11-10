@@ -1,13 +1,13 @@
 <div class="logo">
-  <h1>
+  <h1 class="logo__headline">
     <a class="logo__link" href="{{link.href}}">
       <span class="visually-hidden">
         {{link.text}}
       </span>
-      <span class="logo__icon-wrapper">
-      <!--SVG-->
-      <img class="logo__icon" src="{{img.src}}" alt="{{img.alt}}">
-    </span>
+      <svg class="svg-icon logo__icon" role="img" aria-labelledby="logo" focusable="false">
+        <title id="logo">{{img.alt}}</title>
+        <use xlink:href="#ableton-logo"></use>
+      </svg>
     </a>
   </h1>
 </div>

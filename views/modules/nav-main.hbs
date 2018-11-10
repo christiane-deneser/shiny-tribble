@@ -1,9 +1,9 @@
 <nav class="nav-main">
   <button class="nav-main__button" aria-haspopup="true" aria-controls="id-nav-main" aria-expanded="true">
     <span class="visually-hidden">{{button.text}}</span>
-    <span class="nav-main__icon-wrapper">
-      <!--SVG-->
-    </span>
+    <svg class="svg-icon nav-main__icon" aria-hidden="true" focusable="false">
+      <use xlink:href="#icon-close"></use>
+    </svg>
   </button>
   <ul id="id-nav-main" class="nav-main__list">
     {{#each items}}

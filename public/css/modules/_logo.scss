@@ -1,7 +1,18 @@
-.logo {}
+.logo {
+  margin-bottom: 2.5rem; //40px;
+}
 
-.logo__link {}
+.logo__headline {
+  font-size: var(--base-font-size);
+  line-height: var(--html-line-height);
+}
 
-.logo__icon-wrapper {}
+.logo__link {
+  display: block;
+}
 
-.logo__icon {}
+.logo__icon {
+  display: inline-block;
+  height: 1.875rem; //30px;
+  width: 3.75rem; //60px;
+}

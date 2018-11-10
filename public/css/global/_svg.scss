@@ -1,0 +1,15 @@
+.svg-container {
+  display: none;
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+}
+
+.svg-icon {
+  display: block;
+  fill: inherit;
+  height: 100%;
+  pointer-events: none;
+  width: 100%;
+}

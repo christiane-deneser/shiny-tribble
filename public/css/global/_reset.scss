@@ -27,3 +27,19 @@ ul {
 a {
   text-decoration: none;
 }
+
+button {
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: inherit;
+}
