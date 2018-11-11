@@ -4,10 +4,10 @@
 
 const path = require('path');
 const webpack = require('webpack');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 /*
   webpack sees every file as a module.
   How to handle those files is up to loaders.
@@ -46,14 +46,15 @@ const styles = {
     {
       loader: MiniCssExtractPlugin.loader,
       options: {
+        minimize: true
         // you can specify a publicPath here
         // by default it use publicPath in webpackOptions.output
         // publicPath: '../'
       }
     },
-    "css-loader?sourceMap",
+    "css-loader",
     postcss,
-    'sass-loader?sourceMap'
+    'sass-loader'
   ]
 };
 
@@ -67,6 +68,11 @@ const ugfy = new UglifyJsPlugin({
   parallel: true
 });
 
+const miniCSS = new OptimizeCSSAssetsPlugin({
+  cssProcessorOptions: { discardComments: { removeAll: true } },
+  canPrint: true
+});
+
 // OK - now it's time to put it all together
 const config = {
   entry: {
@@ -74,7 +80,8 @@ const config = {
     app: './public/js/index.js'
   },
   // we're using sourcemaps and here is where we specify which kind of sourcemap to use
-  devtool: 'source-map',
+  // devtool: 'source-map',
+  // Once things are done, we kick it out to a file.
   // Once things are done, we kick it out to a file.
   output: {
     // path is a built in node module
@@ -93,6 +100,7 @@ const config = {
   // plugins: [uglify],
   plugins: [
     ugfy,
+    miniCSS,
     // here is where we tell it to output our css to a separate file
     // new ExtractTextPlugin('style.css'),
     new MiniCssExtractPlugin({
