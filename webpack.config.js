@@ -20,7 +20,7 @@ const javascript = {
   exclude: /node_modules/,
   use: [{
     loader: 'babel-loader',
-    options: { presets: ['env'] } // this is one way of passing options
+    options: { presets: ['@babel/preset-env'] } // this is one way of passing options
   }],
 };
 
