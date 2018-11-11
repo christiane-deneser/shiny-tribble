@@ -1,10 +1,19 @@
 .logo {
   margin-bottom: 2.5rem; //40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: var(--base-spacing-large);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: var(--base-spacing-largest);
+  }
 }
 
 .logo__headline {
   font-size: var(--base-font-size);
-  line-height: var(--html-line-height);
+  line-height: 0;
 }
 
 .logo__link {

@@ -1,11 +1,18 @@
 <header class="header page" role="banner">
-  {{#with logo}}
-    {{> logo}}
-  {{/with}}
-  {{#with nav-main}}
-    {{> nav-main}}
-  {{/with}}
-  {{#with search}}
-    {{> search }}
-  {{/with}}
+  <div class="header__wrapper">
+    {{#with logo}}
+      {{> logo }}
+    {{/with}}
+    {{#with nav-main}}
+      {{> nav-main }}
+    {{/with}}
+  </div>
+  <div class="header__wrapper">
+    {{#with login}}
+      {{> login}}
+    {{/with}}
+    {{#with search}}
+      {{> search }}
+    {{/with}}
+  </div>
 </header>

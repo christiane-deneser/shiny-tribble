@@ -1,3 +1,17 @@
 .header {
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+.header__wrapper {
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
+  }
+}
+

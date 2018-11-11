@@ -25,7 +25,7 @@
   --page-spacing: 1.25rem;
   /*20px*/
   /**
-  * VERTICAL MARGINS
+  * MARGINS
   */
   --base-spacing: 1.25rem;
   /*20px*/
@@ -455,13 +455,40 @@ a:focus {
 */
 .header {
   position: relative; }
+  @media screen and (min-width: 768px) {
+    .header {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .logo {
   margin-bottom: 2.5rem; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      margin-bottom: 0;
+      margin-right: var(--base-spacing-large); } }
+  @media screen and (min-width: 768px) {
+    .logo {
+      margin-right: var(--base-spacing-largest); } }
 
 .logo__headline {
   font-size: var(--base-font-size);
-  line-height: var(--html-line-height); }
+  line-height: 0; }
 
 .logo__link {
   display: block; }
@@ -474,11 +501,17 @@ a:focus {
 .nav-main {
   margin-bottom: var(--base-spacing);
   max-height: 100%; }
+  @media screen and (min-width: 768px) {
+    .nav-main {
+      margin-bottom: 0; } }
 
 .nav-main__button {
   position: absolute;
   right: 0;
   top: 0; }
+  @media screen and (min-width: 768px) {
+    .nav-main__button {
+      display: none; } }
 
 .nav-main__icon {
   display: inline-block;
@@ -487,12 +520,30 @@ a:focus {
 
 .nav-main__list {
   list-style: none; }
+  @media screen and (min-width: 768px) {
+    .nav-main__list {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .nav-main__item {
   margin-bottom: var(--base-spacing); }
+  @media screen and (min-width: 768px) {
+    .nav-main__item {
+      margin-bottom: 0;
+      margin-right: var(--base-spacing-large); } }
+  @media screen and (min-width: 1024px) {
+    .nav-main__item {
+      margin-right: var(--base-spacing-largest); } }
 
 .nav-main__item:last-child {
   margin-bottom: var(--base-spacing-large); }
+  @media screen and (min-width: 768px) {
+    .nav-main__item:last-child {
+      margin-bottom: 0; } }
 
 .nav-main__item--login {
   font-size: var(--small-font-size); }

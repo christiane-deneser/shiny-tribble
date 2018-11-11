@@ -42,12 +42,12 @@
             "text": "Shop",
             "is-active": false
           }
-        ],
-        "login": {
-          "link": {
-            "href": "/login",
-            "text": "Login or register"
-          }
+        ]
+      },
+      "login": {
+        "link": {
+          "href": "/login",
+          "text": "Login or register"
         }
       },
       "search": {
