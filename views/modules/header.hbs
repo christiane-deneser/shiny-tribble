@@ -1,4 +1,4 @@
-<header class="header page" role="banner">
+<header class="header page js-header" role="banner">
   {{#with nav-main}}
     <nav role="navigation" class="nav-main">
       {{#with logo}}
@@ -16,9 +16,9 @@
           </h1>
         </div>
       {{/with}}
-      <button class="nav-main__button" aria-haspopup="true" aria-controls="id-nav-main" aria-expanded="true">
+      <button class="nav-main__button js-nav-main-button" aria-haspopup="true" aria-controls="id-nav-main" aria-expanded="true">
         <span class="visually-hidden">{{button.text}}</span>
-        <svg class="svg-icon nav-main__icon" aria-hidden="true" focusable="false">
+        <svg class="svg-icon nav-main__icon js-nav-main-icon" aria-hidden="true" focusable="false">
           <use xlink:href="#icon-close"></use>
         </svg>
       </button>

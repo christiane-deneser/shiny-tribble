@@ -1,12 +1,16 @@
+/**
+ * CSS
+ * */
 import '../css/style.scss';
 
-
-
+/**
+ * JAVASCRIPT
+ * */
 import Header from './modules/header';
-// alert('hi');
 
-
-// const Header = require('./modules/header')
 {
-  new Header();
+  const headers = document.querySelectorAll('.js-header');
+  headers.forEach((el) => {
+    new Header(el);
+  });
 }
