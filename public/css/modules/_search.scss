@@ -1,21 +1,62 @@
 .search {}
 
+.search__open-search {
+
+}
+
+.search__open-search.is-hidden {
+  display: none;
+}
+
 .search__form {
-  border-bottom: 2px solid;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5px;
+  position: relative;
+}
+
+.search__form.is-hidden {
+  display: none;
+}
+
+.search__form::after {
+
+}
+
+.search__label {
+  position: relative;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    order: 2;
+  }
 }
 
 .search__input {
+  border-bottom: 2px solid;
+  position: relative;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    border: 0;
+    font-size: var(--small-font-size);
+    width: 0;
+  }
+}
+
+.search__input:focus,
+.search__input.is-shown {
+  border-bottom: 2px solid;
   width: 100%;
 }
 
-.search__submit {
-
+.search__input:focus {
+  outline: 1px solid transparent;
 }
 
 .search__icon {
   height: var(--icon-width);
   width: var(--icon-height);
+}
+
+.search__icon.is-hidden {
+  display: none;
 }

@@ -24,6 +24,7 @@ class Header {
     }
   }
 
+  //TODO: exclude to separate Helper module
   helper() {
     const mqDesktop = window.matchMedia( '(min-width: 1024px)' ).matches,
       mqTablet = window.matchMedia( '(min-width: 768px)' ).matches,

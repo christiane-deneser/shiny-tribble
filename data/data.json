@@ -58,7 +58,7 @@
         },
         "label": {
           "for": "id-search",
-          "text": "Search for Cool Stuff at Ableton"
+          "text": "Search Ableton"
         },
         "input": {
           "id": "id-search",
