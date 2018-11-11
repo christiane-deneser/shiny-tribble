@@ -1,0 +1,11 @@
+.login {
+  margin-bottom: var(--base-spacing);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.login__link {
+  font-size: var(--small-font-size);
+}

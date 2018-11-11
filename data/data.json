@@ -2,17 +2,17 @@
   "context": {
     "title": "Music production Live and Push - Ableton",
     "header": {
-      "logo": {
-        "link": {
-          "href": "/",
-          "text": "Music production Live and Push - Ableton"
-        },
-        "img": {
-          "src": "/src/images/icon/ableton-logo.svg",
-          "alt": "Ableton Logo"
-        }
-      },
       "nav-main": {
+        "logo": {
+          "link": {
+            "href": "/",
+            "text": "Music production Live and Push - Ableton"
+          },
+          "img": {
+            "src": "/src/images/icon/ableton-logo.svg",
+            "alt": "Ableton Logo"
+          }
+        },
         "button": {
           "text": "Main navigation"
         },

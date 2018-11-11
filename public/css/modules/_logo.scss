@@ -1,12 +1,11 @@
 .logo {
-  margin-bottom: var(--base-spacing-large); //40px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    flex-grow: 0;
     margin-right: var(--base-spacing-large);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     margin-right: var(--base-spacing-largest);
   }
 }

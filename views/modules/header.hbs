@@ -1,18 +1,55 @@
 <header class="header page" role="banner">
-  <div class="header__wrapper">
-    {{#with logo}}
-      {{> logo }}
-    {{/with}}
-    {{#with nav-main}}
-      {{> nav-main }}
-    {{/with}}
-  </div>
-  <div class="header__wrapper">
+  {{#with nav-main}}
+    <nav role="navigation" class="nav-main">
+      {{#with logo}}
+        <div class="logo">
+          <h1 class="logo__headline">
+            <a class="logo__link" href="{{link.href}}">
+                  <span class="visually-hidden">
+                    {{link.text}}
+                  </span>
+              <svg class="svg-icon logo__icon" role="img" aria-labelledby="logo" focusable="false">
+                <title id="logo">{{img.alt}}</title>
+                <use xlink:href="#ableton-logo"></use>
+              </svg>
+            </a>
+          </h1>
+        </div>
+      {{/with}}
+      <button class="nav-main__button" aria-haspopup="true" aria-controls="id-nav-main" aria-expanded="true">
+        <span class="visually-hidden">{{button.text}}</span>
+        <svg class="svg-icon nav-main__icon" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+      <ul id="id-nav-main" class="nav-main__list js-nav-main-list">
+        {{#each items}}
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="{{href}}">{{text}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </nav>
+  {{/with}}
+  <div class="header__wrapper js-header-wrapper">
     {{#with login}}
-      {{> login}}
+      <div class="login">
+        <a class="login__link" href="{{link.href}}">{{link.text}}</a>
+      </div>
     {{/with}}
     {{#with search}}
-      {{> search }}
+      <div role="search" class="search">
+        <form class="search__form" aria-label="{{form.label}}" action="{{form.action}}" method="{{form.method}}">
+          <label for="id-search" class="visually-hidden">{{label.text}}</label>
+          <input id="id-search" type="search" class="search__input" required>
+          <button type="{{button.type}}" class="search__submit">
+            <span class="visually-hidden">{{button.text}}</span>
+            <svg class="svg-icon search__icon" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     {{/with}}
   </div>
 </header>

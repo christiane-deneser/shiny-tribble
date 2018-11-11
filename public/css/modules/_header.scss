@@ -2,7 +2,6 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-    align-items: center;
     display: flex;
     justify-content: space-between;
   }
@@ -12,6 +11,12 @@
   @media screen and (min-width: 768px) {
     align-items: center;
     display: flex;
+    justify-content: space-between;
   }
 }
+
+.header__wrapper.is-hidden {
+  display: none;
+}
+
 
