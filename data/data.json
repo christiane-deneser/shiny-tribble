@@ -73,22 +73,22 @@
     },
     "main": {
       "image": {
-        "src": "https://unsplash.it/1024/733",
-        "alt": "Alt text",
+        "src": "/images/img/studio-shot-desktop.jpg",
+        "alt": "Creative and colorful music studio with Ableton products on an ancient furniture in the center of the room.",
         "sources": [
           {
-            "media": "(min-width: 64em)",
-            "srcset": "https://unsplash.it/1024/733",
-            "width": "1024"
+            "media": "(min-width: 48em)",
+            "srcset": "/images/img/studio-shot-desktop.jpg",
+            "width": "768"
           },
           {
-            "media": "(min-width: 48em)",
-            "srcset": "https://unsplash.it/768/650",
+            "media": "(min-width: 37.5em)",
+            "srcset": "/images/img/studio-shot-medium.jpg",
             "width": "768"
           },
           {
             "media": "(min-width: 20em)",
-            "srcset": "https://unsplash.it/320/150",
+            "srcset": "/images/img/studio-shot-mobile.jpg",
             "width": "320"
           }
         ]
