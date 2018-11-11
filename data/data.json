@@ -95,19 +95,10 @@
       }
     },
     "footer": {
-      "nav-footer": {
-        "items": [
-          {
-            "link": {
-              "href": "/",
-              "text": "Ableton Homepage"
-            },
-            "img": {
-              "href": "",
-              "alt": "Alt Text"
-            }
-          }
-        ]
+      "logo-footer": {
+        "img": {
+          "alt": "Ableton Logo"
+        }
       }
     }
   }

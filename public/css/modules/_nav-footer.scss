@@ -1,7 +1,10 @@
-.nav-footer {}
+.logo-footer {
+  display: flex;
+  justify-content: flex-end;
+}
 
-.nav-footer__list {}
-
-.nav-footer__item {}
-
-.nav-footer__link {}
+.logo-footer__icon {
+  fill: var(--white);
+  height: var(--icon-height);
+  width: var(--icon-width-large);
+}

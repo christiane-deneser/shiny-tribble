@@ -9,8 +9,8 @@
 
 .nav-main__button {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: var(--base-spacing);
+  top: var(--base-spacing);
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -19,8 +19,8 @@
 
 .nav-main__icon {
   display: inline-block;
-  height: 1.875rem; //30px;
-  width: 1.875rem; //30px;
+  height: var(--icon-height);
+  width: var(--icon-width);
 }
 
 .nav-main__list {

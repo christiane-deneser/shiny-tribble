@@ -1,1 +1,8 @@
-.footer {}
+.footer {
+  background-color: var(--secondary-color);
+  min-height: 14rem; //225px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 0;
+  }
+}

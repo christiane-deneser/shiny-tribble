@@ -3,6 +3,7 @@
   * COLORS
   */
   --black: #000;
+  --white: #fff;
   --primary-color: #fed134;
   --secondary-color: var(--black);
 
@@ -38,4 +39,12 @@
   --base-spacing: 1.25rem; /*20px*/
   --base-spacing-large: calc(1.25rem * 2); /*40px*/
   --base-spacing-largest: calc(1.25rem * 3); /*60px*/
+
+  /**
+  * ICON SIZES
+  */
+  --icon-height: 1.875rem;
+  --icon-width: 1.875rem;
+  --icon-width-large: calc(1.875rem * 2);
+
 }

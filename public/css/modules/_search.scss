@@ -16,6 +16,6 @@
 }
 
 .search__icon {
-  height: 30px;
-  width: 30px;
+  height: var(--icon-width);
+  width: var(--icon-height);
 }

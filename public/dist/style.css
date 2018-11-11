@@ -6,6 +6,7 @@
   * COLORS
   */
   --black: #000;
+  --white: #fff;
   --primary-color: #fed134;
   --secondary-color: var(--black);
   /**
@@ -32,7 +33,13 @@
   --base-spacing-large: calc(1.25rem * 2);
   /*40px*/
   --base-spacing-largest: calc(1.25rem * 3);
-  /*60px*/ }
+  /*60px*/
+  /**
+  * ICON SIZES
+  */
+  --icon-height: 1.875rem;
+  --icon-width: 1.875rem;
+  --icon-width-large: calc(1.875rem * 2); }
   @media screen and (min-width: 768px) {
     :root {
       --base-font-size: 1.125rem;
@@ -454,7 +461,7 @@ img {
 * page
 */
 .page {
-  margin: var(--page-spacing); }
+  padding: var(--page-spacing); }
 
 /**
 * modules
@@ -483,7 +490,7 @@ img {
     display: flex; } }
 
 .logo {
-  margin-bottom: 2.5rem; }
+  margin-bottom: var(--base-spacing-large); }
   @media screen and (min-width: 768px) {
     .logo {
       margin-bottom: 0;
@@ -501,8 +508,8 @@ img {
 
 .logo__icon {
   display: inline-block;
-  height: 1.875rem;
-  width: 3.75rem; }
+  height: var(--icon-height);
+  width: var(--icon-width-large); }
 
 .nav-main {
   margin-bottom: var(--base-spacing);
@@ -513,16 +520,16 @@ img {
 
 .nav-main__button {
   position: absolute;
-  right: 0;
-  top: 0; }
+  right: var(--base-spacing);
+  top: var(--base-spacing); }
   @media screen and (min-width: 768px) {
     .nav-main__button {
       display: none; } }
 
 .nav-main__icon {
   display: inline-block;
-  height: 1.875rem;
-  width: 1.875rem; }
+  height: var(--icon-height);
+  width: var(--icon-width); }
 
 .nav-main__list {
   list-style: none; }
@@ -568,8 +575,28 @@ img {
   width: 100%; }
 
 .search__icon {
-  height: 30px;
-  width: 30px; }
+  height: var(--icon-width);
+  width: var(--icon-height); }
+
+.footer {
+  background-color: var(--secondary-color);
+  min-height: 14rem; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      min-height: 0; } }
+
+.logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.logo-footer__icon {
+  fill: var(--white);
+  height: var(--icon-height);
+  width: var(--icon-width-large); }
 
 /**
 * utils
