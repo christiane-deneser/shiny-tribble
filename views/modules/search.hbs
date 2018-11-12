@@ -1,8 +1,17 @@
-<div role="search" class="search">
-  <form class="search__form" aria-label="{{form.label}}" action="{{form.action}}" method="{{form.method}}">
-    <label for="id-search" class="visually-hidden">{{label.text}}</label>
-    <input id="id-search" type="search" class="search__input" required>
-    <button type="{{button.type}}" class="search__submit">
+<div role="search" class="search js-search">
+  <h2 class="visually-hidden">Search</h2>
+  <form id="id-search-form" class="search__form" aria-label="{{form.label}}"
+        action="{{form.action}}" method="{{form.method}}">
+    <label class="search__label" for="id-search">
+      <span class="visually-hidden">
+        {{label.text}}
+      </span>
+      <svg class="svg-icon search__icon js-search-icon" aria-hidden="true" focusable="false">
+        <use xlink:href="#icon-search"></use>
+      </svg>
+    </label>
+    <input id="id-search" type="search" class="search__input js-search-input" required>
+    <button type="{{button.type}}" class="search__submit js-search-submit">
       <span class="visually-hidden">{{button.text}}</span>
       <svg class="svg-icon search__icon" aria-hidden="true" focusable="false">
         <use xlink:href="#icon-search"></use>

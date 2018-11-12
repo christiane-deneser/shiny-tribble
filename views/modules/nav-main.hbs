@@ -1,11 +1,16 @@
-<nav role="navigation" class="nav-main">
-  <button class="nav-main__button" aria-haspopup="true" aria-controls="id-nav-main" aria-expanded="false">
+<nav role="navigation" class="nav-main" aria-labelledby="id-headline-main-nav">
+  <h2 id="id-headline-main-nav" class="visually-hidden">Ableton Main Navigation</h2>
+  {{#with logo}}
+    {{> logo}}
+  {{/with}}
+  <button class="nav-main__button js-nav-main-button" aria-haspopup="true" aria-controls="id-nav-main"
+          aria-expanded="true">
     <span class="visually-hidden">{{button.text}}</span>
-    <svg class="svg-icon nav-main__icon" aria-hidden="true" focusable="false">
-      <use xlink:href="#icon-open"></use>
+    <svg class="svg-icon nav-main__icon js-nav-main-icon" aria-hidden="true" focusable="false">
+      <use xlink:href="#icon-close"></use>
     </svg>
   </button>
-  <ul id="id-nav-main" class="nav-main__list">
+  <ul id="id-nav-main" class="nav-main__list js-nav-main-list">
     {{#each items}}
       <li class="nav-main__item">
         <a class="nav-main__link" href="{{href}}">{{text}}</a>
