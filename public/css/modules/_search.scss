@@ -1,9 +1,5 @@
 .search {}
 
-.search__open-search {
-
-}
-
 .search__open-search.is-hidden {
   display: none;
 }
@@ -16,10 +12,6 @@
 
 .search__form.is-hidden {
   display: none;
-}
-
-.search__form::after {
-
 }
 
 .search__label {
